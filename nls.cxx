@@ -73,7 +73,7 @@ void initialize(cmplx* const psi0, const double eta, const double dx,
 
 	for(int i=0; i<N; i++){
 		double x = i*dx + xmin;
-		psi0[i] = psi/cosh(0.5*eta * x);
+		psi0[i] = psi/cosh(eta * x);
 	}
 }
 //-----------------------------------------------
